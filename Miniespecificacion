@@ -1,0 +1,46 @@
+1. Objetivo General
+Desarrollar un programa que permita automatizar el proceso de facturación de ventas de trajes, calculando descuentos, totales y análisis estadístico básico de las ventas realizadas.
+2. Entradas del Sistema
+. Nombre del cliente (string).
+. Apellido del cliente (string).
+. Cantidad de trajes a comprar (entero).
+. Precio unitario del traje (decimal positivo).
+3. Procesos del Sistema
+a) Cálculo del Subtotal
+            Subtotal=Cantidad de trajes ×Precio unitario
+b) Aplicación del Descuento
+Se aplica un descuento según la cantidad de trajes:
+. 1 traje: 10%
+. 2 trajes: 20%
+. 3 trajes: 40%
+. Más de 3 trajes: 60%
+             Descuento = Subtotal × Porcentaje de descuento
+c) Cálculo del Total a Pagar
+             Total = Subtotal − Descuento
+d) Registro de Ventas Múltiples
+El sistema usará un ciclo (while) para registrar ventas de múltiples clientes hasta que el usuario decida detener el ingreso de datos.
+e) Almacenamiento de Datos
+Se utilizarán arreglos unidimensionales para almacenar la información de cada cliente:
+. nombres[]
+. apellidos[]
+. cantidades[]
+. precios[]
+. totales[]
+Cada posición i de los arreglos representa una venta completa registrada.
+
+f) Visualización de Resultados
+. Mostrar la información de cada compra: nombre completo, cantidad de trajes, precio unitario, subtotal, descuento y total.
+Calcular y mostrar:
+. El promedio de ventas (basado en los totales).
+. La venta más alta.
+. La venta más baja.
+g) Salidas del Sistema
+. Detalles de cada venta registrada.
+. Promedio de ventas.
+. Venta máxima.
+. Venta mínima.
+h) Requerimientos Funcionales
+. RF1: Permitir el ingreso de datos para múltiples clientes.
+. RF2: Calcular correctamente descuentos y totales.
+. RF3: Almacenar los datos en estructuras paralelas.
+. RF4: Mostrar el resumen de ventas incluyendo análisis.
